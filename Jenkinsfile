@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/mallikarjunaws2025/carvilla.git'
+                git branch: 'main' , url: 'https://github.com/mallikarjunaws2025/carvilla.git'
             }
         }
         stage('Build Docker Image') {
