@@ -1,12 +1,12 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = 'manjukolkar007/project-1:2'
+        DOCKER_IMAGE = 'mallikarjunaws2025/mkdemo'
     }
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/manjukolkar/carvilla.git'
+                git 'https://github.com/mallikarjunaws2025/carvilla.git'
             }
         }
         stage('Build Docker Image') {
